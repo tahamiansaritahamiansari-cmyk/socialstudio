@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Social Studio — Social Media Marketing | Facebook & Instagram Ads</title>
+  <meta name="description" content="Social Studio — Professional Facebook & Instagram marketing, Meta Pixel setup, ad campaigns, content creation and client-attracting strategies. Contact: 03112285611" />
+  <meta name="keywords" content="Social Studio, Social Media Marketing, Facebook Ads, Instagram Ads, Meta Pixel, Client Acquisition, Digital Marketing Pakistan" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFBF59'/%3E%3C/text%3E%3C/svg%3E" />
+  <!-- Open Graph (for Facebook / Instagram link previews) -->
+  <meta property="og:title" content="Social Studio — Social Media Marketing" />
+  <meta property="og:description" content="Professional Facebook & Instagram marketing, Meta Pixel setup, ad campaigns, content creation. Contact: 03112285611" />
+  <meta property="og:image" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Social Studio" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Social Studio",
+    "url": "https://yourdomain.com",
+    "telephone": "+923112285611",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+923112285611",
+      "contactType": "customer service",
+      "email": "tahamiansaritahamiansari@gmail.com",
+      "areaServed": "PK"
+    }]
+  }
+  </script>
+
+  <!-- ==== STYLES ==== -->
+  <style>
+    :root{
+      --accent: #FFBF59;
+      --bg: #0b0b0b;
+      --muted: #bdbdbd;
+      --card: #111111;
+      --radius: 12px;
+      --max-width: 1100px;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#050505 0%,#0d0d0d 100%);
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{max-width:var(--max-width);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:56px;height:56px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#0b0b0b;font-weight:700;font-size:18px;
+      box-shadow:0 6px 18px rgba(255,191,89,0.12);
+    }
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:14px}
+    .cta{background:var(--accent);color:#0b0b0b;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center;padding:48px 0}
+    .hero h1{font-size:34px;line-height:1.02;margin:0}
+    .hero p{color:var(--muted);margin:14px 0 0;font-size:15px}
+    .cards{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+    .card{background:var(--card);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .stat{display:flex;gap:12px;align-items:center}
+    .stat strong{color:var(--accent);font-size:20px}
+    /* Right panel */
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .panel h3{margin:0 0 8px}
+    .contact-row{display:flex;gap:8px;align-items:center}
+    .contact-row a{color:var(--accent);font-weight:700;text-decoration:none}
+    .btn-whatsapp{display:inline-block;padding:10px 12px;border-radius:10px;background:rgba(37,211,102,0.08);color:var(--accent);font-weight:700;text-decoration:none;border:1px solid rgba(255,255,255,0.03)}
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:36px 0}
+    .service{background:var(--glass);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .service h4{margin:0 0 8px}
+    .badge{display:inline-block;padding:6px 8px;border-radius:8px;background:rgba(255,191,89,0.12);color:var(--accent);font-weight:700;font-size:13px}
+    /* Portfolio */
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .portfolio .item{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;min-height:140px;border:1px solid rgba(255,255,255,0.03)}
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;margin-top:22px}
+    .test{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);flex:1}
+    /* Contact section */
+    .contact-section{display:grid;grid-template-columns:1fr 420px;gap:26px;margin:34px 0;padding-bottom:40px}
+    .form input,.form textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:#fff}
+    .form button{background:var(--accent);color:#0b0b0b;padding:12px 16px;border-radius:10px;border:0;font-weight:800;cursor:pointer}
+    /* Footer */
+    footer{padding:24px 0;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+    /* Sticky WhatsApp */
+    .sticky{
+      position:fixed;right:18px;bottom:18px;background:var(--accent);color:#0b0b0b;padding:14px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6);z-index:1000;text-decoration:none;font-weight:800;display:flex;align-items:center;gap:10px
+    }
+    /* Responsive */
+    @media (max-width:980px){
+      .hero,.contact-section{grid-template-columns:1fr}
+      .services{grid-template-columns:repeat(2,1fr)}
+      .portfolio{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      .services{grid-template-columns:1fr}
+      .portfolio{grid-template-columns:1fr}
+      header{padding:12px 8px}
+      .logo{width:46px;height:46px}
+      .hero h1{font-size:24px}
+    }
+  </style>
+
+  <!-- ====== OPTIONAL: Paste Meta Pixel below and replace 'YOUR_PIXEL_ID' with your ID ======
+  <script>
+    !(function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  ======================================================================== -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SS</div>
+        <div>
+          <div style="font-weight:800;font-size:16px">Social Studio</div>
+          <div style="color:var(--muted);font-size:13px">Facebook & Instagram Marketing</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#contact">Get Started</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <h1>Client-hunting social media campaigns that sell — <span style="color:var(--accent)">Social Studio</span></h1>
+          <p>We build high-converting Facebook & Instagram ads, set up Meta Pixel & tracking, design creatives, and run performance-driven campaigns so your brand gets customers — not just likes.</p>
+
+          <div class="cards" aria-hidden="false">
+            <div class="card stat">
+              <div>
+                <div style="font-size:13px;color:var(--muted)">Services</div>
+                <strong style="font-size:20px">Ads • Creatives • Pixel</strong>
+              </div>
+            </div>
+            <div class="card">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div>
+                  <div style="font-size:13px;color:var(--muted)">Contact</div>
+                  <div style="font-weight:800">0311 2285611</div>
+                  <div style="color:var(--muted);font-size:13px">tahamiansaritahamiansari@gmail.com</div>
+                </div>
+                <div style="text-align:right">
+                  <div class="badge">SMM • FB • IG</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="Quick contact">
+          <h3>Ready to grow?</h3>
+          <p style="color:var(--muted);margin:6px 0 14px">Send a quick message on WhatsApp or email us — we’ll propose a free campaign outline.</p>
+
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <!-- WhatsApp quick message link (Pakistan phone converted for wa.me) -->
+            <a class="btn-whatsapp" href="https://wa.me/923112285611?text=Hi%20Social%20Studio%2C%20I%27m%20interested%20in%20your%20social%20media%20services." target="_blank" rel="noopener">WhatsApp: 0311 2285611</a>
+
+            <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden style="opacity:0.9"><path d="M3 8.5a9 9 0 1115.6 6.4L21 21l-6.1-2.1A9 9 0 013 8.5z" stroke="#FFBF59" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div style="font-size:14px"><strong>Email:</strong> <a href="mailto:tahamiansaritahamiansari@gmail.com" style="color:var(--accent);text-decoration:none;font-weight:700">tahamiansaritahamiansari@gmail.com</a></div>
+            </div>
+
+            <div style="color:var(--muted);font-size:13px;margin-top:8px">Phone: <strong style="color:var(--accent)">0311 2285611</strong></div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <div style="display:flex;justify-content:space-between;align-items:end">
+          <div>
+            <h2 style="margin:0 0 6px">Our Services</h2>
+            <p style="color:var(--muted);margin:0 0 12px">Complete Facebook & Instagram marketing stack for client acquisition.</p>
+          </div>
+          <div class="badge">Theme: Black • #FFBF59</div>
+        </div>
+
+        <div class="services">
+          <div class="service">
+            <h4>Facebook & Instagram Ads</h4>
+            <p style="color:var(--muted);margin:6px 0 0">Campaign setup, audience research, ad copy & creative design focused on conversions.</p>
+          </div>
+          <div class="service">
+            <h4>Meta Pixel & Tracking</h4>
+            <p style="color:var(--muted);margin:6px 0 0">Pixel installation, custom events, and conversion tracking for ROAS optimization.</p>
+          </div>
+          <div class="service">
+            <h4>Content & Creatives</h4>
+            <p style="color:var(--muted);margin:6px 0 0">Ad creatives, carousel ads, short videos, captions and CTA testing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div style="display:flex;justify-content:space-between;align-items:end">
+          <div>
+            <h2 style="margin:0 0 6px">Portfolio</h2>
+            <p style="color:var(--muted);margin:0 0 12px">Examples & campaign snapshots (replace images & case details with yours).</p>
+          </div>
+        </div>
+
+        <div class="portfolio" aria-live="polite">
+          <div class="item">
+            <strong>Local Store — Lead Gen</strong>
+            <p style="color:var(--muted);margin-top:8px">Reduced lead cost by 42% with a regional target & A/B tested creatives.</p>
+          </div>
+          <div class="item">
+            <strong>Beauty Brand — Sales</strong>
+            <p style="color:var(--muted);margin-top:8px">Carousel + video ads boosted conversion rate for product launches.</p>
+          </div>
+          <div class="item">
+            <strong>Service Provider — Bookings</strong>
+            <p style="color:var(--muted);margin-top:8px">Appointment-based campaigns with optimized landing pages & Pixel events.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section aria-label="testimonials">
+        <h2 style="margin-top:26px">What clients say</h2>
+        <div class="testimonials">
+          <div class="test">
+            <strong>Ali R.</strong>
+            <p style="color:var(--muted);margin-top:8px">"Social Studio increased our bookings within 2 weeks — great creatives and real results."</p>
+          </div>
+          <div class="test">
+            <strong>Maryam S.</strong>
+            <p style="color:var(--muted);margin-top:8px">"Professional workflow, clear reporting and smart ad strategy."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact-section">
+        <div>
+          <h2>Contact Us</h2>
+          <p style="color:var(--muted)">Tell us about your business — we will reply with a campaign outline.</p>
+
+          <form class="form" onsubmit="handleForm(event)">
+            <div style="display:flex;gap:10px">
+              <input id="name" name="name" placeholder="Your name" required />
+              <input id="phone" name="phone" placeholder="Phone (0311...)" required />
+            </div>
+            <div style="margin-top:10px">
+              <input id="email" name="email" placeholder="Email" type="email" required />
+            </div>
+            <div style="margin-top:10px">
+              <textarea id="message" name="message" rows="5" placeholder="Short description of your business & goal" required></textarea>
+            </div>
+            <div style="margin-top:12px;display:flex;gap:10px">
+              <button type="submit">Send Proposal Request</button>
+              <a href="tel:+923112285611" style="align-self:center;color:var(--muted);text-decoration:none">Call: 0311 2285611</a>
+            </div>
+            <div id="formStatus" style="color:var(--muted);font-size:13px;margin-top:8px"></div>
+          </form>
+        </div>
+
+        <aside style="background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)">
+          <h3>Quick Contact</h3>
+          <p style="color:var(--muted)">WhatsApp or Email — fastest response via WhatsApp.</p>
+          <div style="margin-top:10px">
+            <a class="btn-whatsapp" href="https://wa.me/923112285611?text=Hi%20Social%20Studio%2C%20I%27m%20interested%20in%20your%20services." target="_blank" rel="noopener">Message on WhatsApp</a>
+          </div>
+          <div style="margin-top:14px;color:var(--muted)">
+            <div><strong>Email:</strong> <a style="color:var(--accent);text-decoration:none" href="mailto:tahamiansaritahamiansari@gmail.com">tahamiansaritahamiansari@gmail.com</a></div>
+            <div style="margin-top:8px"><strong>Phone:</strong> <span style="color:var(--accent)">0311 2285611</span></div>
+            <div style="margin-top:12px;color:var(--muted);font-size:13px">Tip: Add your Meta Pixel ID into header (see comment in code) to track conversions.</div>
+          </div>
+        </aside>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <strong>Social Studio</strong> — Social Media Marketing</div>
+      <div style="color:var(--muted)">Made with <span style="color:var(--accent)">♥</span> • Contact: 0311 2285611</div>
+    </footer>
+  </div>
+
+  <!-- Sticky WhatsApp CTA -->
+  <a class="sticky" href="https://wa.me/923112285611?text=Hi%20Social%20Studio%2C%20I%27m%20interested%20in%20your%20services." target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden style="opacity:0.95"><path d="M21 11.5a8.5 8.5 0 10-16.2 4.6L3 21l4.9-1.3A8.5 8.5 0 0021 11.5z" stroke="#0b0b0b" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Message
+  </a>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script>
+    // Simple form handler: opens user's email client with filled details
+    function handleForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Campaign Request from ' + name);
+      const body = encodeURIComponent(
+        "Name: " + name + "\\n" +
+        "Phone: " + phone + "\\n" +
+        "Email: " + email + "\\n\\n" +
+        "Message: " + message + "\\n\\n" +
+        "Source: Website (Social Studio)"
+      );
+
+      // Opens default email client
+      window.location.href = "mailto:tahamiansaritahamiansari@gmail.com?subject=" + subject + "&body=" + body;
+
+      const status = document.getElementById('formStatus');
+      status.textContent = "Opening your email client to send the request...";
+      setTimeout(()=>{ status.textContent = "If nothing opened, please email langsung to tahamiansaritahamiansari@gmail.com or message on WhatsApp."; }, 1800);
+    }
+
+    // Small improvement: smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
